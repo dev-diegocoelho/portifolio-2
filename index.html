@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diego F. G. Coelho</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variable.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
+    <link rel="stylesheet" href="./src/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="topo">
+        <div class="header-container">
+            <a href="/">
+                <figure id="logo">
+                    <img src="./src/images/diego-bra.png" onmouseover="this.src='./src/images/diego-2.png'"
+                        onmouseout="this.src='./src/images/diego-bra.png'" alt="Diego F. G. Coelho">
+                </figure>
+            </a>
+            <nav>
+                <input type="checkbox" id="menu-hamburguer" />
+                <label for="menu-hamburguer">
+                    <div class="menu">
+                        <span class="hamburguer"></span>
+                    </div>
+                </label>
+
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <div class="item">
+            <h3>Diego F. G. Coelho </h3>
+            <p>Futuro desenvolvedor Full-Stack.</p>
+            <div class="show-about">
+                <p>
+                    Estou migrando de área profissional, atuo como entregador autônomo à mais de 6 anos e busco uma
+                    oportunidade de Desenvolvedor Front-End Júnior, já possuo graduação em Sistemas para Internet e
+                    estou cursando Desenvolvedor Full- Stack JS com IA para atualizar, rever conceitos e atuar nesse
+                    mercado.
+                </p>
+                <a href='./src/images/curriculo-diego.pdf.pdf' target="_blank">
+                    <i class="fa fa-file-pdf">
+                        <p>Currículo</p>
+                    </i>
+                </a>
+            </div>
+            <button class="btn-know-more">Saiba mais</button>
+        </div>
+        <div class="image"></div>
+    </section>
+    <section class="tecnologia">
+        <h4 class="title">Tecnologias</h4>
+        <div>
+            <i class="fab fa-html5">
+                <p>HTML5</p>
+            </i>
+
+            <i class="fab fa-css3-alt">
+                <p>CSS3</p>
+            </i>
+
+            <i class="fab fa-js">
+                <p>JavaScript</p>
+            </i>
+            
+            <i class="fab fa-react">
+                <p>React</p>
+            </i>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h4 class="title">Projetos</h4>
+        <div class="project">
+            <a href="https://dev-diegocoelho.github.io/front-mentor-01/" target="_blank">
+                <img src="./src/images/qr-code.png" alt="Desafio Frontend Mentor - QR Code" />
+            </a>
+            <a href="https://dev-diegocoelho.github.io/front-mentor-03/" target="_blank">
+                <img src="./src/images/blog.png" alt="Desafio Frontend Mentor - Blog" />
+            </a>
+            <a href="https://dev-diegocoelho.github.io/front-mentor-02/">
+                <img src="./src/images/recip.png" alt="Desafio Frontend Mentor - Recipe" />
+            </a>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <h4 class="title">Redes Sociais</h4>
+        <div class="social">
+            <a href="https://github.com/dev-diegocoelho" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/diego-felipe-de-goes-coelho-999b95110" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <a href="#topo"><img class="seta" src="./src/images/seta_preta.png" alt="Voltar topo"></a>
+    </footer>
+    <script src="./src/js/index.js"></script>
+
+</body>
+
+</html>
