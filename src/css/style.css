@@ -124,46 +124,12 @@ body {
     height: 70%;
 }
 
-@media(max-width: 768px) {
-    .about .image-nova {
-        width: 65%;
-        height: 40%;
-    }
-}
-
-@media(max-width: 425px) {
-    .about {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        justify-items: center;
-    }
-
-    .about .item h3 {
-        font-size: 2.5rem;
-    }
-
-}
-
-@media(max-width: 375px) {
-    .about .image-nova {
-        width: 60%;
-        height: 40%;
-    }
-}
-
 .title {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 30px;
     text-transform: uppercase;
     color: #FF5E0E;
-}
-
-@media(max-width: 425px) {
-    .title {
-        font-size: 2.8rem;
-    }
 }
 
 /* tecnologia */
@@ -187,7 +153,8 @@ body {
     margin: 10px 0;
     text-align: center;
 }
-.tecnologia p{
+
+.tecnologia p {
     margin-left: 5px;
     font-size: 3rem;
 }
@@ -212,21 +179,6 @@ body {
     transform: scale(1.1);
 }
 
-@media(max-width: 768px) {
-    .tecnologia i {
-        font-size: 3rem;
-    }
-}
-
-@media(max-width: 425px) {
-    .tecnologia i {
-        font-size: 2rem;
-    }
-    .tecnologia p {
-        font-size: 2rem;
-    }
-
-}
 
 /* projects */
 
@@ -262,25 +214,6 @@ body {
 
 }
 
-@media(max-width: 768px) {
-
-    .projects .project img {
-        width: 80%;
-        height: auto;
-    }
-
-}
-
-@media(max-width: 425px) {
-    .projects .project {
-        flex-direction: column;
-    }
-
-    .projects .project img {
-        width: 70%;
-        height: auto;
-    }
-}
 
 /* footer */
 .footer {
@@ -330,4 +263,64 @@ body {
         opacity: 0.9;
 
     }
+}
+
+@media(max-width: 768px) {
+    .about .image-nova {
+        width: 65%;
+        height: 40%;
+    }
+
+    .tecnologia i {
+        font-size: 3rem;
+    }
+
+    .projects .project img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media(max-width: 425px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about .item h3 {
+        font-size: 2.5rem;
+    }
+
+    .about .image,
+    .about .image-nova {
+        width: 276px;
+        height: 320px;
+    }
+
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .tecnologia i {
+        font-size: 2rem;
+    }
+
+    .tecnologia p {
+        font-size: 2rem;
+    }
+
+    .projects .project {
+        flex-direction: column;
+    }
+
+    .projects .project img {
+        width: 70%;
+        height: auto;
+    }
+    .footer .seta{
+        left: 47%;
+    }
+
 }
